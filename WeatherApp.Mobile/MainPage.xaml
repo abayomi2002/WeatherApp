@@ -1,0 +1,101 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             NavigationPage.HasNavigationBar="False"
+             xmlns:strings="clr-namespace:WeatherApp.Mobile.Resources.Language"
+             Title="{x:Static strings:Strings.HOME}"
+             x:Class="WeatherApp.Mobile.MainPage">
+
+    <Grid>
+
+        <!-- Loading Overlay -->
+        <Grid x:Name="LoadingOverlay" BackgroundColor="Black" Opacity="0.65" IsVisible="False">
+            <StackLayout HorizontalOptions="Center" VerticalOptions="Center">
+                <ActivityIndicator IsRunning="True" Color="White" />
+                <Label x:Name="LoaderLabel" TextColor="White" HorizontalOptions="Center" FontAutoScalingEnabled="True" FontSize="Medium" FontAttributes="Bold" Opacity="1"/>
+            </StackLayout>
+        </Grid>
+
+        <Grid RowDefinitions="Auto,Auto,*" Padding="10">
+
+            <!-- Top Layout with Title and Settings Button -->
+            <Grid Grid.Row="0" ColumnDefinitions="*,Auto">
+
+                <!-- Settings Button -->
+                <ImageButton Source="settings.svg"
+                         HeightRequest="30"
+                         WidthRequest="30"
+                         VerticalOptions="Center"
+                         HorizontalOptions="End"
+                         Clicked="OnSettingsClickedAsync" />
+            </Grid>
+
+            <!-- Main Content Area -->
+            <Grid Grid.Row="1" RowDefinitions="Auto,*" VerticalOptions="FillAndExpand">
+                <!-- Search Bar -->
+                <SearchBar x:Name="CitySearchBar"
+                       Placeholder="{x:Static strings:Strings.SEARCH_PLACEHOLDER}"
+                       TextChanged="OnSearchBarTextChanged"
+                       Margin="0,0,0,10" />
+
+                <!-- AbsoluteLayout for Search Results -->
+                <AbsoluteLayout Grid.Row="1" VerticalOptions="FillAndExpand">
+                    <!-- Search Results (Overlay) -->
+                    <Frame HasShadow="True" 
+                       Padding="0"
+                       CornerRadius="5"
+                       x:Name="SearchResultLayout"
+                       MaximumHeightRequest="200"
+                       AbsoluteLayout.LayoutBounds="0,0,1,AutoSize"
+                       AbsoluteLayout.LayoutFlags="WidthProportional, XProportional">
+                        <CollectionView x:Name="CityCollectionView"
+                                    SelectionMode="Single"
+                                    SelectionChanged="OnCitySelected">
+                            <CollectionView.ItemTemplate>
+                                <DataTemplate>
+                                    <StackLayout Padding="0">
+                                        <Label Text="{Binding}"
+                                           FontSize="16"
+                                           Padding="10"/>
+                                    </StackLayout>
+                                </DataTemplate>
+                            </CollectionView.ItemTemplate>
+                        </CollectionView>
+                    </Frame>
+
+                    <!-- Weather Information (Fixed Position) -->
+                    <StackLayout VerticalOptions="Start"
+                             HorizontalOptions="CenterAndExpand"
+                             IsVisible="False"
+                             x:Name="WeatherInfoLayout"
+                             Spacing="10"
+                             Margin="90,100,0,0">
+                        <Label x:Name="CityNameLabel"
+                           FontSize="24"
+                           FontAttributes="Bold"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="CountryLabel"
+                           FontSize="18"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="WeatherConditionLabel"
+                           FontSize="18"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="MaxTempLabel"
+                           FontSize="16"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="MinTempLabel"
+                           FontSize="16"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="WindLabel"
+                           FontSize="16"
+                           HorizontalOptions="Center" />
+                        <Label x:Name="OutlookLabel"
+                           FontSize="16"
+                           HorizontalOptions="Center" />
+                    </StackLayout>
+                </AbsoluteLayout>
+            </Grid>
+        </Grid>
+    </Grid>
+
+</ContentPage>

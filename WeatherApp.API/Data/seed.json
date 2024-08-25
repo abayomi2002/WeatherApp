@@ -1,0 +1,222 @@
+﻿[
+  {
+    "Name": "New York",
+    "Country": "USA",
+    "WeatherCondition": "cloudy",
+    "MaximumTemperature": 25,
+    "MinimumTemperature": 15,
+    "WindDirection": "northwest",
+    "WindSpeed": 20,
+    "OutlookForNextDay": "rain"
+  },
+  {
+    "Name": "Tokyo",
+    "Country": "Japan",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 30,
+    "MinimumTemperature": 20,
+    "WindDirection": "east",
+    "WindSpeed": 15,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Paris",
+    "Country": "France",
+    "WeatherCondition": "fog",
+    "MaximumTemperature": 18,
+    "MinimumTemperature": 10,
+    "WindDirection": "west",
+    "WindSpeed": 12,
+    "OutlookForNextDay": "cloudy"
+  },
+  {
+    "Name": "Sydney",
+    "Country": "Australia",
+    "WeatherCondition": "overcast",
+    "MaximumTemperature": 22,
+    "MinimumTemperature": 13,
+    "WindDirection": "southwest",
+    "WindSpeed": 25,
+    "OutlookForNextDay": "drizzle"
+  },
+  {
+    "Name": "Moscow",
+    "Country": "Russia",
+    "WeatherCondition": "snow",
+    "MaximumTemperature": -5,
+    "MinimumTemperature": -15,
+    "WindDirection": "north",
+    "WindSpeed": 30,
+    "OutlookForNextDay": "snow"
+  },
+  {
+    "Name": "Rio de Janeiro",
+    "Country": "Brazil",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 35,
+    "MinimumTemperature": 25,
+    "WindDirection": "northeast",
+    "WindSpeed": 18,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Cairo",
+    "Country": "Egypt",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 38,
+    "MinimumTemperature": 28,
+    "WindDirection": "north",
+    "WindSpeed": 10,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Berlin",
+    "Country": "Germany",
+    "WeatherCondition": "rain",
+    "MaximumTemperature": 20,
+    "MinimumTemperature": 12,
+    "WindDirection": "west",
+    "WindSpeed": 22,
+    "OutlookForNextDay": "cloudy"
+  },
+  {
+    "Name": "Beijing",
+    "Country": "China",
+    "WeatherCondition": "overcast",
+    "MaximumTemperature": 28,
+    "MinimumTemperature": 18,
+    "WindDirection": "south",
+    "WindSpeed": 14,
+    "OutlookForNextDay": "fog"
+  },
+  {
+    "Name": "Cape Town",
+    "Country": "South Africa",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 26,
+    "MinimumTemperature": 16,
+    "WindDirection": "southeast",
+    "WindSpeed": 28,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Mexico City",
+    "Country": "Mexico",
+    "WeatherCondition": "drizzle",
+    "MaximumTemperature": 24,
+    "MinimumTemperature": 14,
+    "WindDirection": "northwest",
+    "WindSpeed": 12,
+    "OutlookForNextDay": "rain"
+  },
+  {
+    "Name": "Toronto",
+    "Country": "Canada",
+    "WeatherCondition": "snow",
+    "MaximumTemperature": -2,
+    "MinimumTemperature": -12,
+    "WindDirection": "northeast",
+    "WindSpeed": 18,
+    "OutlookForNextDay": "snow"
+  },
+  {
+    "Name": "Madrid",
+    "Country": "Spain",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 32,
+    "MinimumTemperature": 22,
+    "WindDirection": "southwest",
+    "WindSpeed": 16,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Rome",
+    "Country": "Italy",
+    "WeatherCondition": "cloudy",
+    "MaximumTemperature": 27,
+    "MinimumTemperature": 17,
+    "WindDirection": "southeast",
+    "WindSpeed": 14,
+    "OutlookForNextDay": "overcast"
+  },
+  {
+    "Name": "Seoul",
+    "Country": "South Korea",
+    "WeatherCondition": "rain",
+    "MaximumTemperature": 23,
+    "MinimumTemperature": 13,
+    "WindDirection": "east",
+    "WindSpeed": 20,
+    "OutlookForNextDay": "drizzle"
+  },
+  {
+    "Name": "Buenos Aires",
+    "Country": "Argentina",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 29,
+    "MinimumTemperature": 19,
+    "WindDirection": "north",
+    "WindSpeed": 15,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Dubai",
+    "Country": "UAE",
+    "WeatherCondition": "sunny",
+    "MaximumTemperature": 40,
+    "MinimumTemperature": 30,
+    "WindDirection": "southeast",
+    "WindSpeed": 12,
+    "OutlookForNextDay": "sunny"
+  },
+  {
+    "Name": "Singapore",
+    "Country": "Singapore",
+    "WeatherCondition": "cloudy",
+    "MaximumTemperature": 34,
+    "MinimumTemperature": 24,
+    "WindDirection": "southwest",
+    "WindSpeed": 10,
+    "OutlookForNextDay": "drizzle"
+  },
+  {
+    "Name": "Bangkok",
+    "Country": "Thailand",
+    "WeatherCondition": "rain",
+    "MaximumTemperature": 33,
+    "MinimumTemperature": 25,
+    "WindDirection": "south",
+    "WindSpeed": 14,
+    "OutlookForNextDay": "rain"
+  },
+  {
+    "Name": "Istanbul",
+    "Country": "Turkey",
+    "WeatherCondition": "overcast",
+    "MaximumTemperature": 21,
+    "MinimumTemperature": 13,
+    "WindDirection": "northwest",
+    "WindSpeed": 20,
+    "OutlookForNextDay": "cloudy"
+  },
+  {
+    "Name": "London",
+    "Country": "United Kingdom",
+    "WeatherCondition": "fog",
+    "MaximumTemperature": 17,
+    "MinimumTemperature": 9,
+    "WindDirection": "west",
+    "WindSpeed": 22,
+    "OutlookForNextDay": "overcast"
+  },
+  {
+    "Name": "Lagos",
+    "Country": "Nigeria",
+    "WeatherCondition": "rain",
+    "MaximumTemperature": 31,
+    "MinimumTemperature": 24,
+    "WindDirection": "southwest",
+    "WindSpeed": 18,
+    "OutlookForNextDay": "cloudy"
+  }
+]
